@@ -23,14 +23,14 @@ Grave em um diretório.
 
 1. Acessar **AWS Cloud Shell**
 
-2. Instalar '**dos2unix**' no AWS Cloud Shell (necessário para execução do script)
+2. Instalar '**dos2unix**' no AWS Cloud Shell (necessário para execução do script para conversão de arquivos de texto com finais de linha no estilo DOS (CRLF) para o estilo Unix (LF))
 
 ```
 sudo yum install dos2unix -y
 ```
 
 3. Faça upload dos arquivos:
-- usuarios.csv
+- [usuarios.csv](./scripts/usuarios.csv)
 - [aws-iam-cria-usuario.sh](./scripts/aws-iam-cria-usuario.sh)  (está na pasta scripts)
 
 Obj: Vá na seguinte opção no shell
