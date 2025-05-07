@@ -108,3 +108,23 @@ Aparece também no usuário
 ![image](https://github.com/user-attachments/assets/eb432195-33b8-48ed-8204-c7933d0b4e83)
 
 Pronto no próximo login será pedido o código autenticador gerado do aplicativo.
+
+# Resultado
+Login simples
+![login1](https://github.com/user-attachments/assets/2932b15e-0adb-47b9-a99b-0c6b9738ecda)
+
+Login com MFA
+![login-mfa](https://github.com/user-attachments/assets/6ed16f43-d19d-40a9-8980-e7fe06fbae91)
+
+# Bônus
+
+Aplicar Politica de Senha | Tornar Senha mais Forte!!
+
+Vá em IAM > Account Settings > Edit password policy e defina estas configurações para as senhas ficarem ainda mais seguras
+
+![image](https://github.com/user-attachments/assets/78e271b4-0b88-46b4-9ddb-4246184d1141)
+
+# Referências
+
+- AWS Documentation
+
