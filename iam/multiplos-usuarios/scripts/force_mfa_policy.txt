@@ -29,6 +29,14 @@
             "Resource": "arn:aws:iam::*:user/${aws:username}"
         },
         {
+            "Sid": "AllowUserToCreateVirtualMFADevice",
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateVirtualMFADevice"
+            ],
+            "Resource": "arn:aws:iam::*:mfa/*"
+        },
+        {
             "Sid": "DenyAllExceptListedIfNoMFA",
             "Effect": "Deny",
             "NotAction": [
