@@ -1,4 +1,4 @@
-# Objetivo
+![image](https://github.com/user-attachments/assets/bd08aeb6-6646-4719-aed8-dd8c7042bb0a)# Objetivo
 Migração de Aproximadamente 100 contas de usuários on-premises para a AWS, de forma automatizada, associando as permissões necessárias e aplicando MFA nos grupos
 
 # Premissa
@@ -57,7 +57,35 @@ Selecione a opção "Attach policies directly" e pesquisa por IAM
 Em sequida adicione a permissão IAMUserChangePassword
 ![image](https://github.com/user-attachments/assets/85c1d461-23d3-4817-8a8f-04597e616ccc)
 
+## Passo 3 - Configurar MFA com permissão customizada
+
+Esta configuração customizada de MFA, com configurações customizadas para atender a especificações internas de um cliente.
+
+Utilize o arquivo [force_mfa_policy.txt](./scripts/force_mfa_policy.txt) que possui o json config da política customizada.
+
+1. Copie a configuração
+
+2. Vá em IAM > Policies > Create policy cole o json no editor e click em Next
+
+![image](https://github.com/user-attachments/assets/3457a67e-9e46-48e0-ab45-84b7e330abd8)
+
+3. Nomeie a police como "EnforceMFAPolicy" e lá no fim click em Create policy
+
+![image](https://github.com/user-attachments/assets/13461d1e-2502-4358-a5f2-e1bd40d79e7b)
+
+Criado com sucesso
+
+![image](https://github.com/user-attachments/assets/37f7a428-82b8-4bba-a424-b0b5aa26a3a0)
+
+## Passo 5 - Defina a política para os usuários
+
+1. Attach as entidades para definir a police então click em Entities attached > Botão Attach > Selecione os IAM Users em seguida click em Attach Policy
+
+![image](https://github.com/user-attachments/assets/76e68561-b599-4b3c-92a7-5bf83b93dcea)
 
 
-​
+3. Agora filtre por entidade tipo IAM USers
 
+![image](https://github.com/user-attachments/assets/7e310203-5f3e-4286-8845-d1f8cbdd688e)
+
+Pronto todos os usuários agora poderão utlizar MFA porém eles deverão habilitar no próximo login se não eles não estaram autorizados a utilizar a conta.
