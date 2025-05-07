@@ -30,7 +30,7 @@ sudo yum install dos2unix -y
 ```
 
 3. Faça upload dos arquivos:
-- usuarios.csv
+- [usuarios.csv](./scripts/usuarios.csv)
 - [aws-iam-cria-usuario.sh](./scripts/aws-iam-cria-usuario.sh)  (está na pasta scripts)
 
 Obj: Vá na seguinte opção no shell
