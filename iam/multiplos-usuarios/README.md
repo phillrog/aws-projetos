@@ -27,14 +27,15 @@ Grave em um diretório.
 
 ```
 sudo yum install dos2unix -y
-​```
+```
 
 3. Faça upload dos arquivos:
 - usuarios.csv
-- aws-iam-cria-usuario.sh -- está no scripts arquivos
+- [aws-iam-cria-usuario.sh](./scripts/aws-iam-cria-usuario.sh)  (está na pasta scripts)
 
 Obj: Vá na seguinte opção no shell
 
+![image](https://github.com/user-attachments/assets/b509b284-b5f6-403d-9b66-72f0e8218294)
 
 ​
 
