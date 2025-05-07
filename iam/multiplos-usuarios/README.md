@@ -37,5 +37,11 @@ Obj: Vá na seguinte opção no shell
 
 ![image](https://github.com/user-attachments/assets/b509b284-b5f6-403d-9b66-72f0e8218294)
 
+4. Execute o script:
+
+```
+./aws-iam-cria-usuario.sh usuarios.csv 
+```
+
 ​
 
