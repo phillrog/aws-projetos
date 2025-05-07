@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/bd08aeb6-6646-4719-aed8-dd8c7042bb0a)# Objetivo
+# Objetivo
 Migração de Aproximadamente 100 contas de usuários on-premises para a AWS, de forma automatizada, associando as permissões necessárias e aplicando MFA nos grupos
 
 # Premissa
@@ -83,9 +83,28 @@ Criado com sucesso
 
 ![image](https://github.com/user-attachments/assets/76e68561-b599-4b3c-92a7-5bf83b93dcea)
 
+Obs: Faça o mesmo para os grupos
 
-3. Agora filtre por entidade tipo IAM USers
+3. Pronto todos os usuários/grupos poderão utlizar MFA porém eles deverão habilitar no próximo login se não eles não estaram totalmente autenticados a utilizar a conta.
 
 ![image](https://github.com/user-attachments/assets/7e310203-5f3e-4286-8845-d1f8cbdd688e)
 
-Pronto todos os usuários agora poderão utlizar MFA porém eles deverão habilitar no próximo login se não eles não estaram autorizados a utilizar a conta.
+Aparece também no usuário
+
+![image](https://github.com/user-attachments/assets/1ad20fad-9f5e-4e39-90f1-f7c0693b20e4)
+
+
+## Passo 6 - Ativar MFA do usuário
+
+1. Faça login com um usuário
+2. Vá em Security credentials
+![image](https://github.com/user-attachments/assets/839dc77a-e299-40d1-ab9a-90a3a39a2957)
+3. Click em Assign MFA
+![image](https://github.com/user-attachments/assets/ea16c17e-2917-4208-9dc4-62ffd22dd0cc)
+4. Dê um nome para o dispositivo em seguida selecione a opção Authenticator app e click em Next
+![image](https://github.com/user-attachments/assets/15d2a868-836a-4bd4-91d4-dfe9dbe6a624)
+5. Click em Show QR Code e escaneie a imagem com um aplicativo Autenticador MFA (Google/Microsoft authenticator)
+6. Informe o primeiro número na primeira caixa em seguida informe o próximo número na segunda caixa e clica em ADD MFA
+![image](https://github.com/user-attachments/assets/eb432195-33b8-48ed-8204-c7933d0b4e83)
+
+Pronto no próximo login será pedido o código autenticador gerado do aplicativo.
