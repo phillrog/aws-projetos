@@ -85,7 +85,7 @@ Criado com sucesso
 
 ![image](https://github.com/user-attachments/assets/37f7a428-82b8-4bba-a424-b0b5aa26a3a0)
 
-## Passo 5 - Defina a política para os usuários
+## Passo 4 - Defina a política para os usuários
 
 1. Attach as entidades para definir a police então click em Entities attached > Botão Attach > Selecione os IAM Users em seguida click em Attach Policy
 
@@ -102,7 +102,7 @@ Aparece também no usuário
 ![image](https://github.com/user-attachments/assets/1ad20fad-9f5e-4e39-90f1-f7c0693b20e4)
 
 
-## Passo 6 - Ativar MFA do usuário
+## Passo 5 - Ativar MFA do usuário
 
 1. Faça login com um usuário
 2. Vá em Security credentials
