@@ -37,7 +37,15 @@ Obj: Vá na seguinte opção no shell
 
 ![image](https://github.com/user-attachments/assets/b509b284-b5f6-403d-9b66-72f0e8218294)
 
-### 4. Execute o script:
+### 4. Defina a permissão de execução do script com chmod abaixo:
+
+```
+ls -la
+chmod +x aws-iam-cria-usuario.sh
+ls -la
+```
+
+Agora execute :
 
 ```
 ./aws-iam-cria-usuario.sh usuarios.csv 
