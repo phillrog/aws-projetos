@@ -93,7 +93,7 @@ Criado com sucesso
 
 Obs: Faça o mesmo para os grupos
 
-3. Pronto todos os usuários/grupos poderão utlizar MFA porém eles deverão habilitar no próximo login se não eles não estaram totalmente autenticados a utilizar a conta.
+2. Pronto todos os usuários/grupos poderão utlizar MFA porém eles deverão habilitar no próximo login se não eles não estarão totalmente autenticados a utilizar a conta.
 
 ![image](https://github.com/user-attachments/assets/7e310203-5f3e-4286-8845-d1f8cbdd688e)
 
