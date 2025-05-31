@@ -316,9 +316,11 @@ Juntos, esses blocos permitem que o Terraform descreva e provisione a infraestru
 
 <br />
 
-![image](https://github.com/user-attachments/assets/3351adce-0ef1-4d9d-a303-207c7fb0f2a6)
-
+#### E-mail
 ![image](https://github.com/user-attachments/assets/ad42ca98-9d1c-4a04-8786-f14e3655e15f)
+
+#### Confirmação
+![image](https://github.com/user-attachments/assets/3351adce-0ef1-4d9d-a303-207c7fb0f2a6)
 
 <br />
 
@@ -331,7 +333,8 @@ Juntos, esses blocos permitem que o Terraform descreva e provisione a infraestru
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/8aa863a9-93f0-49d8-a601-e7804052f3ba)
+![image](https://github.com/user-attachments/assets/f3f44a07-5445-49e0-a0e2-d25fe43d2878)
+
 
 <br/>
 
@@ -342,7 +345,8 @@ Juntos, esses blocos permitem que o Terraform descreva e provisione a infraestru
     *   Selecione as instâncias EC2 que foram criadas pelo Terraform na Parte 1.
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/42e19e0e-215a-49d5-9884-441778e08782)
+![image](https://github.com/user-attachments/assets/53a5ff6a-af9a-4a26-a846-26d4335a0708)
+
 
 <br />
 
@@ -351,7 +355,8 @@ Juntos, esses blocos permitem que o Terraform descreva e provisione a infraestru
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/ef30f69f-8eba-41d8-ae69-4542ecf17cdb)
+![image](https://github.com/user-attachments/assets/d015d58f-9e4e-4975-b08f-d0a0ac877dd0)
+
 
 <br/>
 
@@ -367,7 +372,8 @@ Juntos, esses blocos permitem que o Terraform descreva e provisione a infraestru
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/ed3ce138-c215-474c-a362-ca3adaaa5dc0)
+![image](https://github.com/user-attachments/assets/3e5d589e-274c-445f-85a3-ea23aee9431c)
+
 
 <br/>
 
@@ -383,7 +389,8 @@ Juntos, esses blocos permitem que o Terraform descreva e provisione a infraestru
         ```
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/cdf507b7-cc38-47bc-915b-adb70f9266f7)
+![image](https://github.com/user-attachments/assets/d83651b4-033b-4524-940b-139d4043c528)
+
 
 <br/>
 
@@ -410,7 +417,8 @@ Juntos, esses blocos permitem que o Terraform descreva e provisione a infraestru
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/f2f35c7e-639a-4904-93cd-2f8f0e3dd52b)
+![image](https://github.com/user-attachments/assets/efb8368e-1aa2-4d4b-8d40-c0d26cc85435)
+
 
 <br/>
 
@@ -420,9 +428,11 @@ Juntos, esses blocos permitem que o Terraform descreva e provisione a infraestru
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/3e46ba27-6ce9-4b01-8800-1975e61a4093)
+![image](https://github.com/user-attachments/assets/9de67bea-5bd0-4b97-886e-6f6851c73b2d)
+
 
 <br/>
+
 6.  **Output options:**
     *   Desmarque "Enable writing to an S3 bucket".
 7.  **SNS notifications:**
@@ -435,7 +445,8 @@ Juntos, esses blocos permitem que o Terraform descreva e provisione a infraestru
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/d25f443e-daf3-40dc-9c62-4225a0e814bd)
+![image](https://github.com/user-attachments/assets/abcd1692-1f63-420c-b8e8-e4861808528b)
+
 
 <br/>
 
@@ -446,15 +457,18 @@ Juntos, esses blocos permitem que o Terraform descreva e provisione a infraestru
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/c6620b17-0d50-4a89-8d1f-2e7d9c9db3ca)
+![image](https://github.com/user-attachments/assets/63c7625d-98e6-41f6-8a92-88fce5642f45)
+
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/2b986da9-e4a6-4704-9253-a2c1931d2546)
+![image](https://github.com/user-attachments/assets/622ae2b0-99ae-4d32-98d7-b212fe2cb720)
+
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/bb4085d7-e87c-45bd-9011-fb672f3ec694)
+![image](https://github.com/user-attachments/assets/cfd1750d-63bd-477c-b1a9-27c670dde2e6)
+
 
 <br/>
 
@@ -480,11 +494,13 @@ Juntos, esses blocos permitem que o Terraform descreva e provisione a infraestru
     ```
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/84a07315-35b9-450a-b05b-8930be410c08)
+![image](https://github.com/user-attachments/assets/1166184c-2359-49bc-be49-9c3587b438ad)
+
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/9b3a8d8e-cf1d-4e0e-ab54-4f69c7f87e6e)
+![image](https://github.com/user-attachments/assets/99f48173-1bf0-423f-84a6-130fd5c65d1c)
+
 
 <br/>
 
