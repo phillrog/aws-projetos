@@ -237,8 +237,7 @@ Obs: Pergunte-se, quanto custaria isso no ambiente on premise ?
 
 <br/>
 
-![Uploading image.png…]()
-
+![image](https://github.com/user-attachments/assets/e7414fc1-8f17-4dd9-9513-9c8517b76489)
 
 <br/>
 
