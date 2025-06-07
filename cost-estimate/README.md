@@ -222,19 +222,23 @@ Obs: Pergunte-se, quanto custaria isso no ambiente on premise ?
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/b620ac1d-ea05-4044-8640-e28a0ae113a6)
+![image](https://github.com/user-attachments/assets/b7eed2f6-40c3-4335-b992-954c62205c60)
+
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/346ddca2-7d94-4007-9d23-451d8a999e5f)
+![image](https://github.com/user-attachments/assets/6bb42a3c-432a-40ee-ac3c-414699f367d2)
+
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/d02f841d-99ae-4cee-bf6d-3a0c06244eac)
+![image](https://github.com/user-attachments/assets/a8bcfbb3-edb5-46fb-8d61-0ae5f2580a70)
+
 
 <br/>
 
-![image](https://gist.github.com/user-attachments/assets/ad5feffc-08d8-4326-918a-9b48565ab8ff)
+![Uploading image.png…]()
+
 
 <br/>
 
