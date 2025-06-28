@@ -17,7 +17,7 @@ resource "aws_security_group" "state_ec2_sg" {
   }
 
   tags = {
-    name = "${var.application_name}-${var.state_name}"
+    Name = "${var.application_name}-${var.state_name}"
   }
 }
 
@@ -26,9 +26,9 @@ resource "aws_instance" "state_ec2" {
   instance_type          = "t2.micro"
   key_name               = "${var.application_name}-ec2-key"
   vpc_security_group_ids = [aws_security_group.state_ec2_sg.id]
-
+  
   tags = {
-    name = "${var.application_name}-${var.state_name}"
+    Name = "${var.application_name}-${var.state_name}"
   }
 }
 
@@ -43,7 +43,7 @@ resource "aws_dynamodb_table" "state_dynamodb" {
   }
 
   tags = {
-    name = "${var.application_name}-${var.state_name}"
+    Name = "${var.application_name}-${var.state_name}"
   }
 }
 
@@ -57,6 +57,6 @@ resource "aws_s3_bucket" "state_s3" {
   bucket = "${var.application_name}-${var.state_name}-s3-${random_string.bucket_suffix.result}"
 
   tags = {
-    name = "${var.application_name}-${var.state_name}"
+    Name = "${var.application_name}-${var.state_name}"
   }
 }
