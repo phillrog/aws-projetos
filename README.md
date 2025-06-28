@@ -11,3 +11,4 @@ Projetos feitos na AWS
 usando ferramentas de Infrastrutura Como Código (IAC): 
 Terraform no deploy da Infra e Ansible nas configurações da 
 solução](https://github.com/phillrog/aws-projetos/blob/main/mvp-ecommerce/README.md)
+- [Implementação de uma Infraestrutura ‘SaaS’, ‘Multi-tenant’ e ‘Reutilizável’ na Aws, Usando Módulos do Terraform](https://github.com/phillrog/aws-projetos/blob/main/terraform-multiplos-tenant/human-gov-infrastructure/terraform/README.md)
