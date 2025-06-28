@@ -1,4 +1,4 @@
-# Implementação de uma Infraestrutura ‘SaaS’, ‘Multi-tenant’ e ‘Reutilizável’ na Aws, Usando Módulos do Terraform e armazenando os arquivos de configuração de forma segura no AWS Code Commit
+# Implementação de uma Infraestrutura ‘SaaS’, ‘Multi-tenant’ e ‘Reutilizável’ na Aws, Usando Módulos do Terraform
 
 # Parte 1: Automatizando sua Infraestrutura SaaS Multi-Tenant com Terraform 
 
