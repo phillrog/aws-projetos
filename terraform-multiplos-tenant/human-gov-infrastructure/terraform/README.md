@@ -599,3 +599,5 @@ Com o Git configurado e o `.gitignore` pronto, você pode adicionar seus arquivo
 ---
 
 # Resultado
+
+![devops-mod3-prova](https://github.com/user-attachments/assets/617c51f8-5a8f-415d-94ad-2173265fa459)
