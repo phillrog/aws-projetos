@@ -25,7 +25,7 @@ resource "aws_instance" "state_ec2" {
   ami                    = "ami-05ffe3c48a9991133"
   instance_type          = "t2.micro"
   key_name               = "${var.application_name}-ec2-key"
-  vpc_security_groups_id = [aws_security_group.state_ec2_sg]
+  vpc_security_group_ids = [aws_security_group.state_ec2_sg.id]
 
   tags = {
     name = "${var.application_name}-${var.state_name}"
@@ -34,7 +34,7 @@ resource "aws_instance" "state_ec2" {
 
 resource "aws_dynamodb_table" "state_dynamodb" {
   name         = "${var.application_name}-${var.state_name}-dynamodb"
-  billing-mode = "PAY_PER_REQUEST"
+  billing_mode = "PAY_PER_REQUEST"
   hash_key     = "id"
 
   attribute {

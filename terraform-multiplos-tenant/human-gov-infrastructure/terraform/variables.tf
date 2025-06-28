@@ -1,4 +1,4 @@
 variable "states" {
   description = "A list of state names"
-  default     = ["São Paulo", "Bahia", "Rio de Janeiro"]
+  default     = ["sao-paulo", "bahia", "rio-de-janeiro"]
 }
