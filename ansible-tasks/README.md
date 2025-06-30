@@ -88,3 +88,114 @@ cat /etc/*rel*
 
 ssh -i tcb-ansible-key.pem ec2-user@PRIVATE-IP_host02
 cat /etc/*rel*    
+
+# Inventário & Ad-hoc
+
+✅ Executar comandos ad-hoc do Ansible
+✅ Criar um arquivo de inventário com os dois hosts provisionados anteriormente
+✅ Testar a comunicação utilizando o módulo ping
+✅ Explorar e entender o arquivo de configuração do Ansible (ansible.cfg)
+
+Passo 01 - Criando Arquivo de Inventário
+Criar uma pasta: ansible-tasks
+mkdir ansible-tasks && cd ansible-tasks
+​
+Dentro da pasta criada, criar arquivo: hosts
+touch hosts
+​
+Inserir os IPs Privados dos Hosts (host01 e host02) 
+Passo 02 - Teste de Comunicação Usando o Módulo 'ping' através de Comandos 'ad-hoc’ do Ansible
+A execução ad-hoc no Ansible é feita usando diretamente o comando ansible (sem o -playbook), para realizar tarefas pontuais e simples, geralmente sem necessidade de um arquivo YAML (.yml).
+# Let's test the connectivity to the managed hosts using Ansible module ping
+ansible -i hosts all -m ping
+
+# You will see an error because we did not specify the username nor the SSH key. Let's fix it now.
+# Ansible Ping do also SSH Connect
+$ ERROR: Permission denied
+
+# Moving the ssh file
+mv ../tcb-ansible-key.pem .
+ls
+
+# Let's inform the SSH Key:
+ansible -i hosts all -m ping -e "ansible_ssh_private_key_file=tcb-ansible-key.pem"
+
+# For 'ec2-user' user it will work (RHEL Linux)
+
+# Let's inform the user names
+ansible -i hosts all -u admin -m ping      # Good for Debian
+ansible -i hosts all -u ec2-user -m ping   # Good for RHEL
+
+And now?!
+​
+Passo 03 - Adicionando Variáveis  ‘user’, ‘alias’ e ‘group’ no 'Inventory File'
+host01 ansible_host=172.31.83.150 ansible_user=admin
+host02 ansible_host=172.31.85.179 ansible_user=ec2-user
+
+ansible -i hosts host01 -m ping -e "ansible_ssh_private_key_file=tcb-ansible-key.pem"
+ansible -i hosts all -m ping -e "ansible_ssh_private_key_file=tcb-ansible-key.pem"
+
+
+# Variables Group
+[all:vars]
+ansible_ssh_private_key_file=tcb-ansible-key.pem
+
+ansible -i hosts all -m ping 
+
+
+[webservers]
+host01
+
+ansible -i hosts webservers all -m ping 
+
+​
+Passo 04 - Ansible Configuration File
+# Exploring the Ansible config
+ansible-config    # No Config File
+ansible --version [ config file = None ]
+
+# Generating a sample ansible.cfg file
+# https://github.com/ansible/ansible/blob/stable-2.9/examples/ansible.cfg
+touch ansible.cfg # Paste the content of the Github ansible.cfg example
+ansible --version [ config file = ansible.cfg ]
+
+# Disabling 'deprecation_warnings' to keep logs clean for study purposes
+deprecation_warnings = False
+
+ansible -i hosts all -m ping 
+
+---
+
+# Setting up 'ping' module as default module:
+# Search for "default module name" or "module_name"
+[defaults]
+module_name=ping
+
+ansible -i hosts all 
+
+---
+# Setting up 'host' inventory file path:
+# Search for "inventory" or "/etc/ansible/hosts"
+[defaults]
+inventory=/etc/ansible/hosts,/home/ec2-user/ansible-tasks/hosts
+
+ansible all 
+ansible webservers 
+
+---
+# Exploring a little more Ansible commands
+ansible-inventory --graph
+ansible-config
+ansible-config dump # In yellow: indicates values modified from the default.
+ansible-config dump --only-changed
+
+# Creating an empty ansible.cfg with all option disabled
+# ansible-config init --disabled > ansible.cfg
+
+## Documentação
+
+[Ansible Configuration (latest)](https://docs.ansible.com/ansible/latest/reference_appendices/config.html)
+
+[Ansible Configuration (2.9)](https://docs.ansible.com/ansible/2.9/reference_appendices/config.html)
+
+[Ansible Configuration Example on Github](https://github.com/ansible/ansible/blob/stable-2.9/examples/ansible.cfg)
