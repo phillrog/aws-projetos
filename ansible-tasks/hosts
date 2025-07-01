@@ -1,0 +1,8 @@
+host01 ansible_host=172.31.31.7 ansible_user=admin
+host02 ansible_host=172.31.25.179 ansible_user=ec2-user
+
+[all:vars]
+ansible_ssh_private_key_file=../../tcb-ansible-key.pem
+
+[webservers]
+host01
