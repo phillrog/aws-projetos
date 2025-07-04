@@ -1,0 +1,42 @@
+- name: "Desmonstrando variáveis com Ansible (Localhost)"
+  hosts: localhost
+  connection:  local
+  gather_facts: no
+
+  vars:
+    nome_app: "MeuAPP"
+    versao: "1.0.0"
+    desenvolvedores: 
+      - Maria
+      - Ana
+      - Eu
+    ambiente: 
+      tipo: "Desenvolvimento"
+      sistema: "Ubuntu 22.04"
+      ip: "127.0.0.1"
+
+  tasks:
+    - name: Exibir nome da aplicação e versão
+      debug:
+        msg: "Aplicação: {{ nome_app }} | Versão: {{ versao }}"
+
+    - name: Listar desenvolvedores do projeto
+      debug:
+        var: desenvolvedores
+
+    - name: Exibir informações do ambiente
+      debug:
+        msg: >
+          Ambiente: {{ ambiente.tipo }},
+          Sistema: {{ ambiente.sistema }},
+          IP: {{ ambiente.ip }}
+
+    - name: Criar arquivo de log com dados da aplicação
+      copy:
+        dest: ./log_app.txt
+        content: |
+          Aplicação: {{ nome_app }}
+          Versão: {{ versao }}
+          Ambiente: {{ ambiente.tipo }}
+          Sistema: {{ ambiente.sistema }}
+          Desenvolvedores: {{ desenvolvedores | join(', ') }}
