@@ -1,0 +1,28 @@
+- name: Example Playbook
+  hosts: localhost
+  vars:
+    http_port: 80
+    https_port: 443
+
+    packages:
+      - git
+      - mysql_client
+      - curl
+      - wget
+
+    appserver:
+      hostname: webapp01
+      ipaddress: 192.168.0.1
+      os: Windows Server 2019
+
+  tasks:
+    - name: Display the single variables
+      debug: 
+        #var: http_port, https_port
+        msg: "HTTP: {{ http_port }}, HTTPS: {{ https_port }}"
+    - name: Display the list of variables
+      debug: 
+        var: packages
+    - name: Display the dictionary of variables
+      debug: 
+        var: appserver        
