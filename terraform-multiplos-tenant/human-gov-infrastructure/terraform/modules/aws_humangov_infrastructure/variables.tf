@@ -5,3 +5,7 @@ variable "state_name" {
 variable "application_name" {
   default = "humangov"
 }
+
+variable "region" {
+  default = "us-east-1"
+}
