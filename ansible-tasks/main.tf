@@ -25,6 +25,17 @@ resource "aws_instance" "host02" {
   }
 }
 
+resource "aws_instance" "host03" {
+  ami                    = "ami-0779caf41f9ba54f0" # Debian Enterprise Linux version 9 
+  instance_type          = "t2.micro"
+  key_name               = "tcb-ansible-key"
+  vpc_security_group_ids = [aws_security_group.secgroup.id]
+
+  provisioner "local-exec" {
+    command = "sleep 30; ssh-keyscan ${self.private_ip} >> ~/.ssh/known_hosts"
+  }
+}
+
 
 resource "aws_security_group" "secgroup" {
 
@@ -64,4 +75,8 @@ output "host01_private_ip" {
 
 output "host02_private_ip" {
   value = aws_instance.host02.private_ip # Update "host" inventory file
+}
+
+output "host03_private_ip" {
+  value = aws_instance.host03.private_ip # Update "host" inventory file
 }
