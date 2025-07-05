@@ -1,0 +1,28 @@
+- hosts: all
+  tasks:
+    # - name: Creating Folder
+    #   file:
+    #     path: /home/{{ ansible_user }}/folder01
+    #     state: directory
+    
+    # - name: Creating File
+    #   file:
+    #     path: /home/{{ ansible_user }}/folder01/file01
+    #     state: touch
+    - name: Creating Folder
+      file:
+        path: /home/{{ ansible_user }}/{{ item }}
+        state: absent
+      loop:
+        - folder01
+        - folder02
+        - folder03
+
+    - name: Creatinf Files
+      file:
+        path: /home/{{ ansible_user }}/{{ item.dir }}/{{ item.file }}
+        state: absent
+      loop:
+        - { dir: "folder01", file: "file01" }    
+        - { dir: "folder02", file: "file02" }    
+        - { dir: "folder03", file: "file03" }    
