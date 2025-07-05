@@ -1,0 +1,5 @@
+- name: Setting Up Apache as Webserver
+  hosts: webservers
+  become: yes
+  roles:
+    - webserver

@@ -1,0 +1,23 @@
+---
+# tasks file for roles/webserver
+
+- name: Installing Apache
+  yum:
+    name: httpd
+    state: present
+
+- name: Starting Apache
+  service:
+    name: httpd
+    state: started
+    enabled: yes
+
+- name: Copy Files
+  copy: src=devops.png dest=/var/www/html
+
+- name: generating Template
+  template:
+    src: index.html.j2
+    dest: /var/www/html/index.html
+  notify:
+    - Restarting Apache  

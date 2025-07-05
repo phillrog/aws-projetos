@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .content {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <b> Hello MUNDO!!!!!!!!!!!!!</b>
+
+    <h1> This is a webserver running in an EC2 Instance: {{ ansible_hostname }}</h1>
+    <h4> Powered by {{ cloud_provider }}</h4>
+
+    <img src="devops.png" alt="DevOps Image">
+  </div>
+</body>
+</html>
