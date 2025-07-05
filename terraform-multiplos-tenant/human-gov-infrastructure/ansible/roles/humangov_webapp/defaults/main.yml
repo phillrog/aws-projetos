@@ -1,0 +1,6 @@
+---
+username: ubuntu
+project_name: humangov
+project_path: "/home/{{ username }}/{{ project_name }}"
+source_application_path: /home/ec2-user/projetos/aws-projetos/terraform-multiplos-tenant/human-gov-application/src
+source_application_path_zip: /home/ec2-user/projetos/aws-projetos/app-aws-2/files
