@@ -43,7 +43,7 @@ resource "aws_security_group" "state_ec2_sg" {
 }
 
 resource "aws_instance" "state_ec2" {
-  ami                    = "ami-05ffe3c48a9991133"
+  ami                    = "ami-020cba7c55df1f615" #"ami-05ffe3c48a9991133"
   instance_type          = "t2.micro"
   key_name               = "${var.application_name}-ec2-key"
   vpc_security_group_ids = [aws_security_group.state_ec2_sg.id]
