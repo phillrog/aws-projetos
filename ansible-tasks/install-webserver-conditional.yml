@@ -9,20 +9,17 @@
         state: present      
       when: ansible_distribution == 'Debian'
 
-    - name: Starting Apache - Debian
-      shell: systemctl start  apache2
-      when: ansible_distribution == 'Debian'
+    # - name: Starting Apache - Debian
+    #   shell: systemctl start  apache2
+    #   when: ansible_distribution == 'Debian'
 
     - name: Setup Apache - RedHat
       yum:
         name: httpd
         state: present
-      service:
-        name: httpd
-        enabled: no
       when: ansible_distribution == 'RedHat'
     
-    - name: Starting Apache - RedHat
-      shell: systemctl start  httpd
-      when: ansible_distribution == 'RedHat'
+    # - name: Starting Apache - RedHat
+    #   shell: systemctl start  httpd
+    #   when: ansible_distribution == 'RedHat'
 
